@@ -1,53 +1,93 @@
-<!-- v1.3.1 -->
+<!-- v2.1 -->
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Die Website des AK Technik vom Gymnasium Dorfen"/>
-    <title>AK Technik</title>
-    <link rel="icon" type="image/png" href="assets/logo.png" />
-    <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="script.js" defer></script>
-</head>
-<body>
-    <nav>
-        <a class="logo-link" href="index.html">
-            <img height="50" width="50" src="assets/logo.png" alt="CODING2GO" />
-            <span>AK Technik</span>
-        </a>
-    <input type="checkbox" id="sidebar-active" />
-    <label for="sidebar-active" id="toggle-button">
-      <svg fill="var(--text-color)" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-        <path d="M160-240q-17 0-28.5-11.5T120-280q0-17 11.5-28.5T160-320h640q17 0 28.5 11.5T840-280q0 17-11.5 28.5T800-240H160Zm0-200q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520h640q17 0 28.5 11.5T840-480q0 17-11.5 28.5T800-440H160Zm0-200q-17 0-28.5-11.5T120-680q0-17 11.5-28.5T160-720h640q17 0 28.5 11.5T840-680q0 17-11.5 28.5T800-640H160Z"/>
-      </svg>
-    </label>
-    <label for="sidebar-active" id="overlay"></label>
-    <div class="links-container">
-      <label for="sidebar-active">
-        <svg fill="var(--text-color)" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-        </svg>
-      </label>
-      <a>Lorem Ipsum</a>
-      <a>Lorem Ipsum</a>
-      <a>Lorem Ipsum</a>
-    </div>
-  </nav>
 
-  <footer>
-    <ul>
-      <li><a>Lorem Ipsum</a></li>
-      <li><a>Lorem Ipsum</a></li>
-      <li><a>Lorem Ipsum</a></li>
-      <li><a>Lorem Ipsum</a></li>
-    </ul>
-  </footer>
-  
-  <div class="copyright">
-    Copyright © 2025 Moritz Wendt. Alle Rechte vorbehalten. v1.3.1
-  </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <title>Ak technik</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="assets/logo.png" alt="Logo" class="logo">
+            <p class="nav-header">Ak Technik</p>
+        </div>
+        <!-- <div class="nav-links">
+            <a href="#">Lorem Ipsum</a>
+            <a href="#">Lorem Ipsum</a>
+            <a href="#">Lorem Ipsum</a>
+            <a href="#">Lorem Ipsum</a>
+        </div> -->
+        <div class="nav-buttons">
+            <a href="#" class="login-btn">Log In</a>
+            <a href="#" class="try-btn">Registrieren</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="left-section">
+            <h1>Kontakt aufnehmen</h1>
+            <p class="subtitle">Wir sind für Sie da! Wie können wir Ihnen helfen?</p>
+
+            <div class="form-container">
+                <h2>Schreiben Sie uns</h2>
+                <form autocomplete="off" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Dein Name</label>
+                            <input type="text" name="name" id="name" required placeholder="Bitte geben Sie Ihren Namen ein"
+                                autocomplete="off">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Thema</label>
+                            <select name="subject" id="subject" required autocomplete="off">
+                                <option value="" selected>Nur Hallo sagen</option>
+                                <option value="algemeine_anfrage">Algemeine Anfrage</option>
+                                <option value="veranstaltung_anmelden">Veranstaltung Anmelden</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="Bitte geben Sie Ihre E-Mail-Adresse ein"
+                            autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" required placeholder="Geben Sie hier Ihre Nachricht ein"
+                            autocomplete="off"></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <h2>Anstehende Veranstaltungen</h2>
+    </main>
+
+    <div id="success-message" class="hidden">
+        Nachricht erfolgreich gesendet!
+    </div>
+
+    <div class="copyright">
+        Copyright © 2025 Moritz Wendt. Alle Rechte vorbehalten. v2.1
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
