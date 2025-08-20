@@ -67,6 +67,12 @@ body{
     gap: 1rem;
 }
 
+.nav-header{
+  margin-left: 20px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
 .login-btn{
     color: var(--text-secondary);
     text-decoration: none;
