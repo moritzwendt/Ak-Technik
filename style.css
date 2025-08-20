@@ -245,7 +245,6 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--primary-color);
     border-radius: 14px;
     color: #fff;
     font-size: 1.3rem;
