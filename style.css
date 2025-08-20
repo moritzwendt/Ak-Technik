@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root{
-    --primary-color: #4263EB;
+    --primary-color: #eb4242;
     --text-primary: #1b1b1b;
     --text-secondary: #6b7280;
     --background-light: #f8f9ff;
@@ -19,7 +19,7 @@
 body{
     font-family: 'Inter', sans-serif;
     color: var(--text-primary);
-    line-height: 1.5;
+    line-height: 1.5; 
     background-color: #fff;
     min-height: 100vh;
     font-size: var(--base-font-size);
@@ -69,7 +69,7 @@ body{
 
 .nav-header{
   margin-left: 20px;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -79,7 +79,7 @@ body{
     font-weight: 500;
 }
 
-.try-btn{
+.reg-btn{
     background-color: var(--primary-color);
     color: #fff;
     padding: 0.4rem 1rem;
@@ -89,8 +89,15 @@ body{
     transition: opacity 0.2s ease;
 }
 
-.try-btn:hover{
+.login-btn:hover{
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+.reg-btn:hover{
     opacity: 0.9;
+    text-decoration: line-through;
+    cursor: not-allowed;
 }
 
 .main-content{
